@@ -1,3 +1,4 @@
+repeat wait() until game:IsLoaded()
 game.Players.PlayerAdded:Connect(function(instance)
 if tostring(instance) == 'GoodTimesWithNoah_YT' or tostring(instance) == 'iKusho27' then
     print("A friend has joined so macro is still working")
@@ -12,6 +13,8 @@ syn.request({Url = webhook_url,Method = "POST",Headers = {["Content-Type"] = "ap
     game:GetService("TeleportService"):Teleport(8097148487)
 end
 end)
+
+wait(5)
 
 function doTeleport()
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
