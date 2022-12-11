@@ -1,3 +1,5 @@
+repeat wait() until game:IsLoaded()
+
 local Imput = game:GetService("UserInputService")
     Imput.InputBegan:connect(function(inst)
     if inst.KeyCode == Enum.KeyCode.KeypadMinus then
